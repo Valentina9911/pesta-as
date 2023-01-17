@@ -1,13 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ENTRE CEJAS Y PESTAÑAS MT</title>
+    <link rel="stylesheet" href="./src/index.css">
+    <link rel="icon" href="./images/Group-1.ico" >
   </head>
+
   <body>
-    <div id="root"></div>
+    <article id="#home">
+    <!---menu--->
+    <header class="menu">
+      <img class="logo" src="./images/logop.jpg">
+    <nav>
+      <ul>
+          <li class="inicio"><a href="index.html" class="href">Inicio</a></li>
+          <li class="contacto"><a href="contacto.html" class="href">Contacto</a></li>
+          <li class="cntacto"><a href="nosotros.html" class="href">Sobre Nosotros</a></li>
+      </ul>
+  </nav>
+</div>
+</header>
+<!---procesos-->
+
+<form action="#">
+  <!--label for="procedimiento">Procedimiento</label-->
+  <select name="lenguajes" class="botones" id="lang">
+    <option  value="javascript">Seleccionar</option>
+    <option value="pestañas">Extensiones de pestañas</option>
+    <option value="cejas">Cejas</option>
+    <option  value="lifitng">Lifting</option>
+  </select>
+  <select name="lenguajes" class="botones" id="lang">
+    <option value="javascript">Seleccionar</option>
+    <option value="pestañas">Tipo de procedimiento</option>
+    <option value="cejas">Cejas</option>
+    <option value="lifitng">Lifting</option>
+
+    <input type="text" class="botones" placeholder="Nombre" />
+    <input type="text" class="botones" placeholder="Fecha" />
+    
+  
+  <input type="submit" class="botonE" value="Pedir cita" />
+</form>
+<!---contenido -->
+<img src="./images/WhatsApp Image 2023-01-13 at 8.29.41 PM.jpeg">
+<a class="boton" href="cejas.html">CEJAS</a>
+<br>
+<img src="./images/WhatsApp Image 2023-01-13 at 8.30.25 PM.jpeg">
+<a class="boton" href="pestañas.html">PESTAÑAS</a>
+<!---footer-->
+<footer class="palabra">Valentina Godoy &copy; 2022
+  <button class="redes"><a href="tel:+573208610876"><img class="redes" src="./images/phone.svg"></button></a>
+    <button class="redes"><a href="https://www.facebook.com/profile.php?id=100079711010326"><img class="redes" src="./images/instagram.png"></button></a>
+    <button class="redes"><a href="https://api.whatsapp.com/send/?phone=573208610876&text=Hola+Laura+%C2%BFComo+va+todo?&type=phone_number&app_absent=0"><img class="redes" src="./images/wlgo.png"></button></a>
+    <button class="redes"><a href="https://www.facebook.com/profile.php?id=100079711010326"><img class="redes" src="./images/facebook.png"></button></a>
+</footer>
+
+    <div idnpm="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

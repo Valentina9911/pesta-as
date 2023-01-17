@@ -1,10 +1,11 @@
-import './App.css'
+import './App.css';
+import Pag from './Components/contentPag.jsx';
 
 function App() {
  
 
   return (
-   <></>
+   <Pag />
   )
 }
 
