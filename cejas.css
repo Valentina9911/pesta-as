@@ -1,30 +1,42 @@
 body{
     font-family: 'Nunito', sans-serif;
+    background-color: #3bb2b8;
+        background: linear-gradient(
+          25deg,
+          rgb(18, 113, 172),
+          rgb(99, 175, 164),
+          rgb(0, 43, 85)
+        );
+        background-repeat: no-repeat;
+        height: 100%;
+        font-family: "Open Sans", sans-serif;
     
 }
 header{
-    background-color: #9BF6D6;
+    background-color: white;
+    display: flex;
+    padding-left: 20px;
 }
 h1{
     text-align: center;
 }
 h2{
-    
+font-size: 200%;
 }
+p{
+
+}
+
 .logo{
     width: 80px;
     height: 80px;
     padding: 20px;
-    align-items: center;
 }
-
-.menu{
-    text-align: right;
+.menuu{
+    padding: 50px;
+    text-align: center;
 }
 .menu ul li{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
     display: inline-block;
     
 }
@@ -32,6 +44,7 @@ h2{
     text-decoration: none;
     color: black;
     padding: 0 50px;
+    text-align: center;
 }
 
 .href:hover{
@@ -44,11 +57,7 @@ h2{
     text-align: center;
     border-color: transparent;
 }
-.botonE{
-    background-color: rgba(255, 0, 0, 0.593);
-    border-radius: 20px;
-    border-color: rgba(255, 0, 0, 0.593);
-}
+
 .redes{
     width: 30px;
     height: 30px;
@@ -57,14 +66,13 @@ h2{
     border-color: transparent;
     
 }
-img{
-    width: 500px;
-    height: 500px;
-    border-radius: 100px;
+.ceja{
+    width: 50%;
+    height: auto;
 }
 .cuadricula{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 190px;
     gap: 1em;
     list-style: none;
@@ -72,7 +80,7 @@ img{
 .images{
     width: 190px;
     height: 190px;
-    border-radius: 50px;
+    border-radius: 20px;
     background-repeat: no-repeat;
 }
 footer{

@@ -4,12 +4,27 @@ body{
 }
 header{
     background-color: #9BF6D6;
+    display: flex;
+    padding-left: 20px;
+}
+.ubicacion{
+    width: 50%;
+    margin: auto;
+    display: flex;
+
+
 }
 h1{
-    text-align: center;
+    color: #549c82;
+    font-size: 50px;
+
 }
 h2{
-    
+    color: #9BF6D6;
+    font-size: 50px;
+}
+p{
+    font-size: 30px;
 }
 .logo{
     width: 80px;
@@ -17,14 +32,17 @@ h2{
     padding: 20px;
     align-items: center;
 }
-
-.menu{
-    text-align: right;
+.logo{
+    width: 80px;
+    height: 80px;
+    padding: 30px;
+    justify-content: right;
+}
+.menuu{
+    padding: 50px;
+    text-align: center;
 }
 .menu ul li{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
     display: inline-block;
     
 }
@@ -32,6 +50,7 @@ h2{
     text-decoration: none;
     color: black;
     padding: 0 50px;
+    text-align: center;
 }
 
 .href:hover{
@@ -44,11 +63,7 @@ h2{
     text-align: center;
     border-color: transparent;
 }
-.botonE{
-    background-color: rgba(255, 0, 0, 0.593);
-    border-radius: 20px;
-    border-color: rgba(255, 0, 0, 0.593);
-}
+
 .redes{
     width: 30px;
     height: 30px;
@@ -58,12 +73,16 @@ h2{
     text-align: justify;
 }
 .redes1{
-    width: 50%;
-    height: auto;
-    padding: 20px;
     background-color: transparent;
     border-color: transparent;
-    text-align: justify;
+    display: flex;
+    width: 50px;
+}
+.text{
+    color: black;
+}
+.container{
+   
 }
 .foto{
     width: 50%;

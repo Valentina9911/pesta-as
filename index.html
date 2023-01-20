@@ -7,6 +7,7 @@
     <title>ENTRE CEJAS Y PESTAÑAS MT</title>
     <link rel="stylesheet" href="./src/index.css">
     <link rel="icon" href="./images/logo1.ico" >
+    <link rel="php" href="vcarco.php" >
   </head>
 
   <body>
@@ -22,58 +23,120 @@
         <li class="opcion"><a href="galeria.html" class="href">Galeria</a></li>
       </ul>
   </nav>
-</div>
 </header>
 <br>
 
-<!---procesos-->
+<!---procesos caja de citas-->
 
-<form action="#">
-  <!--label for="procedimiento">Procedimiento</label-->
-  <select name="lenguajes" class="botones" id="lang">
-    <option  value="javascript">Seleccionar</option>
-    <option value="pestañas">Extensiones de pestañas</option>
-    <option value="cejas">Cejas</option>
-    <option  value="lifitng">Lifting</option>
+
+<form name="f1" action="#"> 
+  <select name="zona" class="botones" id="lang" onchange="cambia_procedimiento()"> 
+  <option value="0" selected>Seleccione... 
+  <option value="1">Cejas 
+  <option value="2">Pestañas 
+  <option value="3">Lifting 
+
   </select>
-  <select name="lenguajes" class="botones" id="lang">
-    <option value="javascript">Seleccionar</option>
-    <option value="pestañas">Tipo de procedimiento</option>
-    <option value="cejas">Cejas</option>
-    <option value="lifitng">Lifting</option>
-
-    <input type="text" class="botones" placeholder="Nombre" />
-    <input type="text" class="botones" placeholder="Fecha" />
-    
   
-  <input type="submit" class="botonE" value="Pedir cita" img src="./images/wlgo.png" />
+  <select name="procedimiento" class="botones" id="lang2" > 
+  <option value="-">- 
+  </select> 
+  <input id="Nombre" type="text" class="botones" placeholder="Nombre" />
+  <input id="Fecha" type="date" class="botones" placeholder="Fecha" />
+  
+
+<input type="button" class="botonE" value="Pedir cita" onclick="myFunction()"/>
 </form>
+
+<script>
+
+  var procedimientos_1=new Array("-","Depilacion en hilo o cera","Diseño de cejas","Pigmento temporal");
+  var procedimientos_2=new Array("-","Extensiones pelo a pelo","Extensiones de volumen","Extensiones 2D y retoque");
+  var procedimientos_3=new Array("-","Lifting");
+  
+
+  var todosProcedimientos = [
+    [],
+    procedimientos_1,
+    procedimientos_2,
+    procedimientos_3,
+    
+  ];
+
+  function cambia_procedimiento(){ 
+ 
+   	var zona 
+   	zona = document.f1.zona[document.f1.zona.selectedIndex].value 
+ 
+   	if (zona != 0) { 
+    
+      	mis_procedimientos=todosProcedimientos[zona]
+
+      	num_procedimientos = mis_procedimientos.length 
+     
+      	document.f1.procedimiento.length = num_procedimientos 
+   
+      	for(i=0;i<num_procedimientos;i++){ 
+         	document.f1.procedimiento.options[i].value=mis_procedimientos[i] 
+         	document.f1.procedimiento.options[i].text=mis_procedimientos[i] 
+      	}	
+   	}else{ 
+
+      	document.f1.procedimiento.length = 1 
+     
+      	document.f1.procedimiento.options[0].value = "-" 
+      	document.f1.procedimiento.options[0].text = "-" 
+   	} 
+  
+   	document.f1.procedimiento.options[0].selected = true 
+}
+function myFunction() {
+var combo = document.getElementById("lang");
+var selected = combo.options[combo.selectedIndex].text;
+var comb = document.getElementById("lang2");
+var select = comb.options[comb.selectedIndex].text;
+var Nom =document.getElementById ("Nombre").value;
+var Fec =document.getElementById("Fecha").value;
+var resultado = "https://api.whatsapp.com/send/?phone=573203958934&text=Hola+mi+nombre+es+"+Nom+"+y+quiero+programar+mi+cita+de+"+selected+"+con+el+procedimiento+de+"+select+"+para+el+dia+"+Fec+";&type=phone_number&app_absent=0"
+
+window.location.href = resultado;
+  }
+  
+</script>
 <br>
-<!---contenido -->
+<!---Bienvenida-->
+<h1>Bienvenido(a)</h1>
+<p>Te damos la bienvenida a ENTRE CEJAS Y PESTAÑAS MT 
+  Aca encontraras servicios para realzar tu mirada y cambiar tu apariencia de una forma estetica, sin riesgo de lastimarte,
+  Escribenos al whatsapppara asesorarte y darte un buen servicio
+</p>
+
+<!---contenido de fotos y productos -->
+<div class="cuadricula">
 <div class="cejas">
-<img class="images" src="./images/pestaña1.jpeg">
-<img class="images" src="./images/pestaña1.jpeg">
-<img class="images" src="./images/pestaña1.jpeg">
-<a class="boton" href="cejas.html">CEJAS</a>
+<img class="images" src="./images/ceja1.jpeg">
+<img class="images" src="./images/ceja1.jpeg">
+<a class="text" href="cejas.html">CEJAS</a>
+</div>
 </div>
 <br><br><br><br>
 <br><br><br><br><br><br>
+<div class="cuadricula">
 <div class="pestañas">
-  <a class="boton" href="pestañas.html">PESTAÑAS</a>
-<img class="images" src="./images/pestaña7.jpeg">
-<img class="images" src="./images/ojos.jpeg">
-<img class="images" src="./images/pestaña.jpeg">
+  <a class="text" href="pestañas.html">PESTAÑAS</a>
 <img class="images" src="./images/pestaña1.jpeg">
+<img class="images" src="./images/pestaña1.jpeg">
+</div>
 
 </div>
 <br><br><br><br><br><br><br>
 <br>
 <!---footer-->
-<footer class="palabra">
-  Valentina Godoy &copy; 2022
-  <button class="redes"><a href="tel:+573208610876"><img class="redes" src="./images/phone.svg"></button></a>
-    <button class="redes"><a href="https://www.facebook.com/profile.php?id=100079711010326"><img class="redes" src="./images/instagram.png"></button></a>
-    <button class="redes"><a href="https://api.whatsapp.com/send/?phone=573208610876&text=Hola+Laura+%C2%BFComo+va+todo?&type=phone_number&app_absent=0"><img class="redes" src="./images/wlgo.png"></button></a>
+<footer class="h">
+Entre Cejas Y Pestañas &copy; 2023
+  <button class="redes"><a href="tel:+573203958934"><img class="redes" src="./images/phone.svg"></button></a>
+    <button class="redes"><a href="https://instagram.com/entrecejasypestanasmt?igshid=YmMyMTA2M2Y="><img class="redes" src="./images/instagram.png"></button></a>
+    <button class="redes"><a href="https://api.whatsapp.com/send/?phone=573203958934&text=Hola+Quiero+programar+mi+cita&type=phone_number&app_absent=0"><img class="redes" src="./images/wlgo.png"></button></a>
     <button class="redes"><a href="https://www.facebook.com/profile.php?id=100079711010326"><img class="redes" src="./images/facebook.png"></button></a>
 </footer>
 
