@@ -1,0 +1,90 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    
+}
+header{
+    background-color: #9BF6D6;
+}
+h1{
+    text-align: center;
+}
+h2{
+    
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    align-items: center;
+}
+
+.menu{
+    text-align: right;
+}
+.menu ul li{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    display: inline-block;
+    
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 50px;
+}
+
+.href:hover{
+    color: white;
+}
+
+.botones{
+    background-color: #99ffdbc7;
+    border-radius: 5px;
+    text-align: center;
+    border-color: transparent;
+}
+.botonE{
+    background-color: rgba(255, 0, 0, 0.593);
+    border-radius: 20px;
+    border-color: rgba(255, 0, 0, 0.593);
+}
+.redes{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    text-align: justify;
+}
+.redes1{
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    text-align: justify;
+}
+.foto{
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+.cuadricula{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 190px;
+    gap: 1em;
+    list-style: none;
+}
+.images{
+    width: 190px;
+    height: 190px;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+}
+footer{
+    background-color: #9BF6D6;
+    padding: 20px;
+    text-align: center;
+}
