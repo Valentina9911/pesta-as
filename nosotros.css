@@ -1,12 +1,12 @@
 body{
     font-family: 'Nunito', sans-serif;
-    background-color: #3bb2b8;
-        background: linear-gradient(
+    /* background-color: #3bb2b8; */
+        /* background: linear-gradient(
           25deg,
           rgb(18, 113, 172),
           rgb(99, 175, 164),
           rgb(0, 43, 85)
-        );
+        ); */
         background-repeat: no-repeat;
         height: 100%;
         font-family: "Open Sans", sans-serif;
@@ -14,7 +14,7 @@ body{
     
 }
 header{
-    background-color: white;
+    background-color: #9BF6D6;
     display: flex;
     padding-left: 20px;
 }

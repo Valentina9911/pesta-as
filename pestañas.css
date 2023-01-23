@@ -1,17 +1,28 @@
 body{
     font-family: 'Nunito', sans-serif;
+    /* background-color: #3bb2b8;
+        background: linear-gradient(
+          25deg,
+          rgb(18, 113, 172),
+          rgb(99, 175, 164),
+          rgb(0, 43, 85)
+        ); */
+        background-repeat: no-repeat;
+        height: 100%;
     
 }
 /* menu */
 header{
-    background-color: #9BF6D6;
+    background-color: rgb(194, 247, 230);
     display: flex;
     padding-left: 20px;
 }
 h1{
     text-align: center;
 }
-
+.cuadro{
+    background-color: rgba(186, 239, 231, 0.549);
+}
 .logo{
     width: 80px;
     height: 80px;
@@ -33,7 +44,7 @@ h1{
     text-align: center;
 }
 .href:hover{
-    color: white;
+    color: rgb(120, 223, 201);
 }
 
 .botones{
@@ -64,7 +75,7 @@ h1{
     background-repeat: no-repeat;
 }
 footer{
-    background-color: #9BF6D6;
+    background-color: rgb(194, 247, 230);
     padding: 20px;
     text-align: center;
 }

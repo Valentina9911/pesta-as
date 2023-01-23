@@ -2,8 +2,15 @@ import './App.css';
 import Pag from './Components/contentPag.jsx';
 import Menu from './Components/Menu';
 import Opciones from './Components/opciones';
+import { ProductList } from './Components/ProductList';
 
 function App() {
+    return(
+  
+      <Header />,
+      <ProductList />
+  
+    )
  
 
   return (
@@ -42,10 +49,5 @@ function App() {
   );
 }
 
-function App( {
-  return(
-    <h1>App</h1>
-  )
-})
 
 export default App

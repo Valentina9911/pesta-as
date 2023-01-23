@@ -1,18 +1,18 @@
 body{
     font-family: 'Nunito', sans-serif;
-        background-color: #3bb2b8;
+        /* background-color: #3bb2b8;
         background: linear-gradient(
           25deg,
           rgb(70, 247, 229),
           rgb(96, 133, 125)
-        );
+        ); */
         background-repeat: no-repeat;
         height: 100%;
         font-family: "Open Sans", sans-serif;
 }
 /* menu */
 header{
-    background-color: #ecf5f2c0;
+    background-color: #9BF6D6;
     display: flex;
     padding-left: 20px;
 }
